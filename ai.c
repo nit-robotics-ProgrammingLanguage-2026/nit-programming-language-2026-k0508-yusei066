@@ -3,10 +3,8 @@
 int main(void) {
     int n;
 
-    // 整数値の入力
-    printf("整数を入力してください: ");
+    // 整数値の入力（メッセージなし）
     if (scanf("%d", &n) != 1) {
-        printf("入力エラーです。\n");
         return 1;
     }
 
@@ -27,7 +25,7 @@ int main(void) {
             printf("Up");
             matched = 1;
         }
-        // 5의 倍数の判定
+        // 5の倍数の判定
         if (n % 5 == 0) {
             printf("Go");
             matched = 1;
